@@ -8,9 +8,6 @@
 
 # ASRX
 ASRX is an advanced Active Directory security auditing tool (developed by Davud Qasimov) designed to automate the AS-REP Roasting attack. The tool leverages Kerberos protocol details and LDAP services to locate accounts with pre-authentication disabled, request TGT tokens for them, and export them into formats ready for offline password cracking.
-### Notion(en): https://app.notion.com/p/ASRX-3c7e38fe4d54802ea36bf1b59f892770?source=copy_link
-### Notion(ru): https://app.notion.com/p/ASRX-ru-3c7e38fe4d548078a2f3fcc323ea0a3b?source=copy_link
-### Notion(az): https://app.notion.com/p/ASRX-az-3c7e38fe4d548068be04fcc2af47bd51?source=copy_link
 
 ### ‼️Prerequisites
 
