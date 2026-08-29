@@ -21,20 +21,20 @@ ASRX requires **Impacket** and **pyasn1** to handle LDAP and Kerberos communicat
 
  ## ASRX Configuration & Global Setup Guide
 This guide covers how to set up ASRX so it can be executed globally from any directory on your system.
-## 🌍Making ASRX Globally Accessible
+### 🌍Making ASRX Globally Accessible
 To run asrx as a system-wide command from any path in your terminal, follow these steps:
-## 1. Make the Script Executable
+### 1. Make the Script Executable
 Navigate to your project directory and grant execution permissions to the main script:
 chmod +x asrx.py
 
-## 2. Create a Global Symbolic Link
+### 2. Create a Global Symbolic Link
 Create a symlink in /usr/local/bin so the system recognizes asrx as a global command. This ensures that any updates you pull or push in your local repository will instantly apply to the global command:
 sudo ln -s /full/path/to/your/ASRX/asrx.py /usr/local/bin/asrx
 
 (Replace /full/path/to/your/ASRX/asrx.py with the absolute path to your file).
-## 3. Verify the Installation
+### 3. Verify the Installation
 Open a new terminal window in any random directory (e.g., your home directory) and run:
 asrx -h
 
-## If the help menu appears successfully, the global configuration is complete.
+#### If the help menu appears successfully, the global configuration is complete.
 For authorized security auditing and educational purposes only.
