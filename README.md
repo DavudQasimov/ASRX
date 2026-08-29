@@ -6,6 +6,25 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=ASRX;&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
 </p>
 
+## ASRX Configuration & Global Setup Guide
+This guide covers how to set up ASRX so it can be executed globally from any directory on your system.
+## 🌍Making ASRX Globally Accessible
+To run asrx as a system-wide command from any path in your terminal, follow these steps:
+## 1. Make the Script Executable
+Navigate to your project directory and grant execution permissions to the main script:
+chmod +x asrx.py
+
+## 2. Create a Global Symbolic Link
+Create a symlink in /usr/local/bin so the system recognizes asrx as a global command. This ensures that any updates you pull or push in your local repository will instantly apply to the global command:
+sudo ln -s /full/path/to/your/ASRX/asrx.py /usr/local/bin/asrx
+
+(Replace /full/path/to/your/ASRX/asrx.py with the absolute path to your file).
+## 3. Verify the Installation
+Open a new terminal window in any random directory (e.g., your home directory) and run:
+asrx -h
+
+## If the help menu appears successfully, the global configuration is complete.
+
 # ASRX
 ASRX is an advanced Active Directory security auditing tool (developed by Davud Qasimov) designed to automate the AS-REP Roasting attack. The tool leverages Kerberos protocol details and LDAP services to locate accounts with pre-authentication disabled, request TGT tokens for them, and export them into formats ready for offline password cracking.
 ### Notion(en): https://app.notion.com/p/ASRX-3c7e38fe4d54802ea36bf1b59f892770?source=copy_link
